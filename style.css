@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section0{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.section0 img{
+    height: 45px;
+}
+.section0 div{
+    display: flex;
+    align-items: center;
+}
+#top-image{
+    background-image: url("./assets/kw-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 70px;
+    /* border:2px solid rgb(2, 255, 103);  */
+}
+#top-image h1{
+    font-size:50px;
+}
+.books{
+    width:fit-content;
+    /* border:2px solid red;                    */
+}
+.books img{
+    height: 200px;
+}
+.books h2{
+    font-size: 18px;
+}
+.books p{
+    color: rgb(127, 124, 124);
+    padding: 5px;
+}
+.bluebox img{
+    height: 20px;
+}
+.RandB{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bluebox{
+    display: flex;
+    background-color: #6196FF;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    color: white;
+    border-radius: 3px;
+}
+.bluebox:hover{
+    cursor: pointer;
+    background-color: #2164e8;
+}
+.bluebox:active{
+    transform:scale(1.2);
+}
+#titlebook,#titlegame,#titlelove{
+    display: flex;
+    margin: 100px 0 0 100px;
+}
+.newbooks,.newgames,.newlove{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 70px 100px 100px;
+}
+#footer img{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    margin:3px;
+}
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px 55px;
+}
+#names{
+    text-align: right;
+}
+
+@media screen and (max-width:1000px) {
+    .section0{
+        justify-content: space-around;
+        padding: 10px;
+    }
+    #top-image{
+        width:100%;
+    }
+    .newbooks,.newgames,.newlove{
+        flex-direction: column;
+        align-items: center;    
+    }
+    .books{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .newbooks img{
+        height: 100%;
+    }
+    .sizing{
+        width: 300px;
+        height: auto;
+    }
+    .RandB{
+        padding:8px 0 25px 0;
+    }
+    #footer{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
