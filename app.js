@@ -151,16 +151,26 @@ blueBtn[13].onclick=()=>{
 
 
 cartIcon.onclick=()=>{
+
+  let message=""
     for(let element of items){
         if(element.quantity==0){
             continue;
         }else{
-            console.log("Item name: "+element.name+"- Quantity: "+element.quantity)
+            message+="Item name: "+element.name+"- Quantity: "+element.quantity+","
         }
     }
-    console.log("The total amount is: "+Math.floor(totalDollars)+" dollars and "+Math.floor(
-    (totalDollars-Math.floor(totalDollars))*100)+" cents")
+    message+="The total amount is: "+Math.floor(totalDollars)+" dollars and "+Math.floor(
+    (totalDollars-Math.floor(totalDollars))*100)+" cents"
+
+    console.log(message)
+
+    const whatsappLink = `https://wa.me/?text=${message}`;
+
+    window.open(whatsappLink,"_blank")
 }
+
+
 
 
 
